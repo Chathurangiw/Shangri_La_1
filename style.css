@@ -1,0 +1,223 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  color: black;
+  padding: 6px 150px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+.logo-container span{
+  font-size: 25px;
+  font-family: Montserrat, Verdana, Helvetica, Arial, sans-serif;
+ font-style: normal;
+}
+.logo {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-right > * {
+  margin-right: 10px;
+}
+
+.header-right > *:last-child {
+  margin-right: 0;
+}
+
+.header-right a,
+.dropbtn {
+  text-decoration: none;
+  color: rgb(2, 2, 2);
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+/* Dropdown menu styles */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #fff;
+}
+
+/*Nav Bar */
+nav{
+	background: rgb(9, 9, 9);
+}
+.navbar .megamenu{ padding: 1rem; }
+
+.navbar-nav .nav-link {
+  color: white !important;
+}
+.find-hotel-btn {
+    color: #fff; /* White text color */
+    background-color: transparent; /* Transparent background */
+    border: 2px solid #fff; /* White border */
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    margin-left: 150px; /* Adjust margin to move the button to the right */
+}
+
+.find-hotel-btn:hover {
+    background-color: #0b0b0b; /* Navbar color on hover */
+    border-color: #fff; /* Navbar color for border on hover */
+    color: #fff; /* White text color on hover */
+}
+
+.find-hotel-btn:active {
+    color: #6c757d; /* Gray text color when button is clicked */
+}
+/*add style background images home page*/
+.home{
+	padding: 0;
+}
+
+.home .slide{
+	text-align: center;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover !important;
+    background-position: center !important;
+    min-height: 40rem;
+	
+	
+}
+
+.home .slide .content{
+	width: 85rem;
+	
+	
+}
+.home .slide .content span {
+    display: block;
+    font-size: 36px;
+	line-height: 48px;
+	margin-bottom: 10px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+    color: #fff;
+	font-family: PlayfairDisplay,Georgia, 'Times New Roman', Times, serif;
+}
+
+.home .slide .content h4 {
+	color: #fff;
+    font-size: 20px;
+    line-height: 28px;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.home {
+  position: relative;
+}
+.bottom-container {
+  position: fixed;
+  bottom: 42px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  background-color: hsla(0, 0%, 100%, .6);
+  padding: 25px;
+  border-radius: 0px;
+display: flex;
+  justify-content: space-between;
+ 
+}
+
+.small-container {
+  width: 30%; /* Adjust the width as needed */
+  height: 40px; /* Adjust the height as needed */
+  background-color: #fff; /* White background color */
+  border: 1px solid #ccc; /* Border for visibility */
+  border-radius: 5px; /* Rounded corners */
+}
+.search-button {
+  padding: 10px 20px; /* Adjust padding as needed */
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Add cursor pointer on hover */
+}
+.container1 {
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+	
+	.navbar .has-megamenu{position:static!important;}
+	.navbar .megamenu{left:10%; right:0; width:80%; margin-top:0;  }
+	
+}	
+/* ============ desktop view .end// ============ */
+
+
+/* ============ mobile view ============ */
+@media(max-width: 991px){
+	.navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse{
+		overflow-y: auto;
+	    max-height: 90vh;
+	    margin-top:10px;
+	}
+}
+/* ============ mobile view .end// ============ */
+

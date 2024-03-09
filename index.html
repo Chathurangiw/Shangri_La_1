@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Hotel in Colombo | Shangri-La Colombo</title>
+    <link rel="icon" type="image/png" href="path/to/your/folder/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta name="keywords" content="htmlcss bootstrap aside menu, vertical, sidebar nav menu CSS examples" />
+    <meta name="description" content="Bootstrap 5 sidebar navigation menu example" />  
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <!-- ======= Icons used for dropdown (you can use your own) ======== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="img/logo.jpeg" alt="Logo" class="logo">
+            <span>SHANGRI-LA</span>
+        </div>
+        <div class="header-right">
+          <div class="header-icon-container">
+            <a href="#" class="header-icon"><i class="fas fa-user"></i> Sign In</a>
+          </div>
+            <span> | </span> <!-- Added spaces -->
+            <div class="header-right">
+              <div class="join-now-container">
+                  <a href="#">Join Now</a>
+              </div>
+            <span> | </span> <!-- Added spaces -->
+            <div class="find-reservations-container">
+              <a href="#">Find Reservations</a>
+            </div>
+            <span> | </span> <!-- Added spaces -->
+            <div class="dropdown">
+              <a href="#">English</a>
+              <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+              </div>
+            </div>
+            <span> | </span> <!-- Added spaces -->
+            <div class="find-reservations-container">
+              <a href="#">SGD</a>
+            </div>
+            <span> | </span> <!-- Added spaces -->
+            <div class="mobile-icon-container">
+              <a href="#" class="header-icon"><i class="fas fa-mobile-alt"></i></a>
+            </div>
+        </div>
+
+        
+    </header>
+
+    <!--Creating Nav Bar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main_nav">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown has-megamenu">
+              
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> ABOUT  </a>
+              
+              <div class="dropdown-menu megamenu" role="menu">
+                <div class="row g-3">
+                  
+                  <div class="col-lg-3 col-12">
+                    <div class="col-megamenu">
+                      <h6 class="title">About The Hotel</h6>
+                      <ul class="list-unstyled">
+                        <li><a href="#">Overview</a></li>
+                        <li><a href="#">Explore Colombo</a></li>
+                        <li><a href="#">Services & Facilities</a></li>
+                        <li><a href="#">Map & Directions</a></li>
+                        
+                      </ul>
+                    </div>  <!-- col-megamenu.// -->
+                  </div><!-- end col-3 -->      
+            </li>
+            <li class="nav-item dropdown has-megamenu">
+              
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> ROOMS & SUITES </a>
+              
+              <div class="dropdown-menu megamenu" role="menu">
+                <div class="row g-3">
+                  <div class="col-lg-3 col-12">
+                    <div class="col-megamenu">
+                      <h6 class="title">Rooms</h6>
+                      <ul class="list-unstyled">
+                        <li><a href="#">Deluxe Lake View</a></li>
+                        <li><a href="#">Deluxe Ocean View</a></li>
+                        <li><a href="#">Premier Balcony</a></li>
+                        <li><a href="#">Premier Ocean View</a></li>
+                      </ul>
+                    </div>  <!-- col-megamenu.// -->
+                  </div><!-- end col-3 -->
+                <div class="col-lg-3 col-12">
+                    <div class="col-megamenu">
+                      <h6 class="title">Horizon Club</h6>
+                      <ul class="list-unstyled">
+                        <li><a href="#">Horizon Club Lake View</a></li>
+                        <li><a href="#">Horizon Club Ocean View</a></li>
+                      </ul>
+                    </div>  <!-- col-megamenu.// -->
+                  </div><!-- end col-3 -->
+                  <div class="col-lg-3 col-12">
+                    <div class="col-megamenu">
+                      <h6 class="title">Suites</h6>
+                      <ul class="list-unstyled">
+                        <li><a href="#">Executive Suites</a></li>
+                        <li><a href="#">Specialty Suites</a></li>
+                        <li><a href="#">Shangri-La Suite</a></li>
+                        
+                      </ul>
+                    </div>  <!-- col-megamenu.// -->
+                  </div>    
+                  <div class="col-lg-3 col-12">
+                    <div class="col-megamenu">
+                      <h6 class="title">Connecting Rooms</h6>
+                      <ul class="list-unstyled">
+                        <li><a href="#">Executive Suites & Premier Ocean Room Connecting</a></li>
+                        <li><a href="#">Two Deluxe Lake View Rooms Connecting</a></li>
+                        
+                      </ul>
+                    </div>  <!-- col-megamenu.// -->
+                  </div><!-- end col-3 -->
+                </div><!-- end row --> 
+              </div> <!-- dropdown-mega-menu.// -->
+            </li>
+            <li class="nav-item dropdown has-megamenu">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> DINING  </a>
+              <div class="dropdown-menu megamenu" role="menu">
+                <div class="row g-3">
+                  <div class="col-lg-3 col-12">
+                    <div class="col-megamenu">
+                      <h6 class="title">Bars & Launges</h6>
+                      <ul class="list-unstyled">
+                        <li><a href="#">Sapphyr Lounge</a></li>
+                        <li><a href="#">Capital Bar & Grill</a></li>
+                        <li><a href="#">Pool Bar</a></li>
+                        <li><a href="#">Tiki Bar</a></li>
+                        
+                      </ul>
+                    </div>
+                  </div>
+                      <div class="col-lg-3 col-12">
+                        <div class="col-megamenu">
+                          <h6 class="title">Restaurants</h6>
+                          <ul class="list-unstyled">
+                            <li><a href="#">Cake Temptations by Shangri-La Colombo</a></li>
+                            <li><a href="#">Shang Palace</a></li>
+                            <li><a href="#">Capital Bar &Grill</a></li>
+                            <li><a href="#">Tiki Bar</a></li>
+                            <li><a href="#">Central</a></li>
+                            <li><a href="#">Central cafe</a></li>
+                            
+                          </ul>
+                        </div>  <!-- col-megamenu.// -->
+                      </div><!-- end col-3 -->
+                    </div><!-- end row --> 
+                    </div>  <!-- col-megamenu.// -->
+                  <!-- end col-3 -->
+                  
+              <li class="nav-item dropdown has-megamenu">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">EXPERIENCE </a>
+                  <div class="dropdown-menu megamenu" role="menu">
+                      <div class="row g-3">
+                        <div class="col-lg-3 col-12">
+                          <div class="col-megamenu">
+                            <h6 class="title">For Kids</h6>
+                              <ul class="list-unstyled">
+                                  <li><a href="#">Overview</a></li>
+                                  <li><a href="#">Adventure Zone</a></li>
+                                  <li><a href="#">Celebrations</a></li>
+                                  
+                              </ul>
+                            </div>  <!-- col-megamenu.// -->
+                          </div><!-- end col-3 -->
+                      <div class="col-lg-3 col-12">
+                          <div class="col-megamenu">
+                              <h6 class="title">Health & Leisure</h6>
+                              <ul class="list-unstyled">
+                                  <li><a href="#">Overview</a></li>
+                                  <li><a href="#">Health Club</a></li>
+                                  <li><a href="#">Chi,The Spa</a></li>
+                                
+                              </ul>
+                          </div>  <!-- col-megamenu.// -->
+                      </div> 
+                   
+              </div> <!-- dropdown-mega-menu.// -->
+              </li>
+              <li class="nav-item dropdown has-megamenu">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> EVENTS  </a>
+              <div class="dropdown-menu megamenu" role="menu">
+                <div class="row g-3">
+                  <div class="col-lg-3 col-12">
+                    <div class="col-megamenu">
+                      <h6 class="title">Meeting & Events</h6>
+                      <ul class="list-unstyled">
+                        <li><a href="#">Overview</a></li>
+                        <li><a href="#">Experience it</a></li>
+                        <li><a href="#">Coworking Space</a></li>
+                        <li><a href="#">Outside Catering</a></li>
+                        <li><a href="#">Request For Proposal</a></li>
+                        <li><a href="#">Book Meeting Room Online</a></li>
+                      </ul>
+                    </div>  <!-- col-megamenu.// -->
+                  </div><!-- end col-3 -->
+                  <div class="col-lg-3 col-12">
+                    <div class="col-megamenu">
+                      <h6 class="title">Wedding and Celebrations</h6>
+                      <ul class="list-unstyled">
+                        <li><a href="#">Overview</a></li>
+                        <li><a href="#">Wedding Planning</a></li>
+                        <li><a href="#">Wedding By Shangri-La</a></li>
+                        <li><a href="#">Request for Proposal</a></li>
+                        
+                      </ul>
+                    </div>  <!-- col-megamenu.// -->
+                  </div><!-- end col-3 --> 
+              </div> <!-- dropdown-mega-menu.// -->
+            </li>
+                  <ul class="navbar-nav ms-auto">
+                      <li class="nav-item"><a class="nav-link" href="#"> GALLERY </a></li>
+                  </ul>
+                  <ul class="navbar-nav ms-auto">
+                      <li class="nav-item"><a class="nav-link" href="#"> OFFERS</a></li>
+                  
+                  </ul>
+                  <li class="nav-item dropdown has-megamenu">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> MORE </a>
+              <div class="dropdown-menu megamenu" role="menu">
+                <div class="row g-3">
+                  <div class="col-lg-3 col-12">
+                    <div class="col-megamenu">
+                      <h6 class="title">Apartments</h6>
+                      <ul class="list-unstyled">
+                        <li><a href="#">Learn More</a></li>
+                        
+                      </ul>
+                    </div>  <!-- col-megamenu.// -->
+                  </div><!-- end col-3 -->
+                  
+                  
+              </div> <!-- dropdown-mega-menu.// -->
+            </li>			 
+          </ul>
+              <a class="nav-link find-hotel-btn ml-auto" href="#">Find A Hotel</a>
+      
+      
+      
+        </div> <!-- navbar-collapse.// -->
+      </div> <!-- container-fluid.// -->
+      </nav>
+     
+      
+      
+      <!----Add Background home section-->
+      <section class="home">
+        <div class="swiper home-slider">
+          <div class="swiper-wrapper">
+            <div class ="swiper-slide slide" style ="background:url(img/img1.jpeg) no-repeat">
+              <div class="content">
+                <span>Shangri-La Colombo</span>
+                <h4>Come with us through the whimsical world of shangri-La, where your personal paradise awaits.</h4>
+              </div>
+              <div class="bottom-container">
+                <div class="small-container"></div>
+                <div class="small-container"></div>
+                <div class="small-container"></div>
+                <button class="search-button">Search</button>
+              </div>
+            </div>
+            <div class ="swiper-slide slide" style ="background:url(img/img2.jpeg) no-repeat">
+              
+              <div class="content">
+                <span>Rooms & Suites</span>
+                <h4>Tastefully designed with the modern traveler in mind</h4>
+              </div>
+            </div>
+      
+            <div class ="swiper-slide slide" style ="background:url(img/img5.jpeg) no-repeat">
+              <div class="overlay"></div>
+              <div class="content">
+                <span>Shang Palace</span>
+                <h4>Celebrate the art of Chinese cuisine in the heart of Colombo</h4>
+              </div>
+              <div class="bottom-container">
+                <div class="small-container"></div>
+                <div class="small-container"></div>
+                <div class="small-container"></div>
+                <button class="search-button">Search</button>
+              </div>
+            </div>
+      
+            <div class ="swiper-slide slide" style="background:url(img/img3.jpeg) no-repeat">
+              <div class="content">
+                <span>Shangri -La Colombo</span>
+                <h4>Apersonal tropical sanctuary set within the heart of the city</h4>
+              </div>
+              <div class="bottom-container">
+                <div class="small-container"></div>
+                <div class="small-container"></div>
+                <div class="small-container"></div>
+                <button class="search-button">Search</button>
+              </div>
+            </div>
+      
+            <div class ="swiper-slide slide" style ="background-color: #8e8f91;">
+              <div class="content">
+                <span>Golden Express to jade</span>
+                <h4>Upgrade to Jade sataus with just 10 Qualifying Nights or 3,000 Tier Points</h4>
+              </div>
+              <div class="bottom-container">
+                <div class="small-container"></div>
+                <div class="small-container"></div>
+                <div class="small-container"></div>
+                <button class="search-button">Search</button>
+              </div>
+            </div>
+      
+          </div>
+          <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      
+        </div>
+      </section>
+      
+      
+      
+     
+    
+
+  
+ 
+     <script src="script.js"></script>
+</body>
+</html>
